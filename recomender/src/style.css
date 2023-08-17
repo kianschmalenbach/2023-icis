@@ -1,0 +1,249 @@
+body {
+    margin: 3vh 3vw;
+    font-family: Arial, sans-serif;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+main {
+    margin: 0 3vw;
+}
+
+h1, .subtitle {
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: -10px;
+    font-size: 1.1em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.important {
+    font-weight: bold;
+    color: darkred;
+}
+
+.explanation, .form-container {
+    margin: auto;
+    width: 50vw;
+    min-width: 600px;
+}
+
+.table-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.explanation {
+    text-align: justify;
+    margin-top: 1.25em;
+}
+
+.instructions {
+    font-style: italic;
+    text-align: center;
+}
+
+.form-container, .table-container {
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column;
+    background-color: #eeeeee;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 1em 0 .6em;
+    line-height: 1.4em;
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+input, select {
+    font-size: 1em;
+}
+
+input[type=radio] {
+    width: 1em;
+    height: 1em;
+}
+
+.survey-table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin: 10px 0 20px;
+}
+
+.survey-table th, .survey-table td {
+    border: 1px solid #888888;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 8vw;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.sliderTable td * {
+    vertical-align: middle;
+}
+
+.sliderTable button {
+    width: 30px;
+}
+
+table th, table td {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.survey-table td:first-child {
+    text-align: left;
+    width: 40vw;
+}
+
+table td.statement {
+    font-size: 0.95em;
+}
+
+table .separator {
+    background-color: black;
+    border: 1px solid black;
+    padding: 1px 0 0;
+}
+
+table input[type=radio] {
+    width: 100%;
+    height: 1em;
+}
+
+#instructionButtonContainer {
+    text-align: center;
+}
+
+#instructionButton {
+    font-size: .9em;
+}
+
+#newsarea, #newsarea-demo {
+    margin: 15px 5% 0;
+    display: flex;
+    flex-flow: column;
+}
+
+#newsarea-demo {
+    margin: auto;
+    width: 60vw;
+}
+
+.newsitem {
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.author {
+    font-style: italic;
+    font-size: large;
+    line-height: 1.3em;
+}
+
+.menu button {
+    margin-top: 1em;
+    padding: 5px 10px;
+}
+
+button {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.sliderIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.sliderIcon-demo {
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+}
+
+.sliderTable {
+    margin-top: 10px;
+}
+
+.sliderTable input[type=range]:disabled {
+    -webkit-appearance: none;
+    border-radius: 40px;
+    height: 20px;
+    background: indianred;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.sliderTable input[type=range]:disabled::-webkit-slider-thumb, .sliderTable input[type=range]:disabled::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #dddddd;
+}
+
+.menu {
+    text-align: center;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ol > li {
+    margin-top: 20px;
+}
+
+ol > li:first-child {
+    margin-top: 0;
+}
+
+ul > li {
+    margin-top: 5px;
+}
+
+ul > li * {
+    vertical-align: bottom;
+}
+
+#nextHint {
+    margin-bottom: -1.5em;
+}
+
+#continue-container {
+    margin-bottom: -0.5em;
+}
+
+[hidden] {
+    display: none !important;
+}

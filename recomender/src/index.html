@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="en">
+    <link href="style.css" rel="stylesheet">
+    <!-- The following files hardcode sample data from the database -->
+    <script src="data.js" type="application/javascript"></script>
+    <script src="news.js" type="application/javascript"></script>
+    <script src="user.js" type="application/javascript"></script>
+    <!-- end of hardcoded data files-->
+    <script defer src="script.js" type="application/javascript"></script>
+    <title>News Recommender</title>
+</head>
+<body>
+<h1 id="head">News Recommender</h1>
+<p class="subtitle">(page <span id="currentPage"></span> of <span id="maxPage"></span>)</p>
+<p class="instructions">Please read and assess the following news items.</p>
+<div id="instructionButtonContainer">
+    <button id="instructionButton">Show Instructions</button>
+</div>
+<div class="form-container" hidden="hidden" id="instructions">
+    <ol>
+        <li><span class="bold">How much do you like the content of the article?</span>
+            <ul>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/lowlikeability.png"> indicates that you do
+                    not like the article's content.
+                </li>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/highlikeability.png"> indicates that you
+                    like
+                    the article's content.
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">How do you rate the quality of the article?</span>
+            <ul>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/lowquality.png"> indicates that you think
+                    the article has a low quality.
+                </li>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/highquality.png"> indicates that you think
+                    the
+                    article has a high quality.
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">How do you rate the relevance of the article?</span>
+            <ul>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/lowrelevance.png"> indicates that you think
+                    the article is not relevant.
+                </li>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/highrelevance.png"> indicates that you think
+                    the article is highly relevant.
+                </li>
+            </ul>
+        </li>
+        <li><span class="bold">To what extend do you think different people can agree with the content of the
+            article?</span>
+            <ul>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/lowconsensus.png"> indicates that you think
+                    different readers will not consent to the content of the article.
+                </li>
+                <li>The symbol <img class="sliderIcon-demo" src="../img/highconsensus.png"> indicates that you think
+                    different readers will consent to the content of the article.
+                </li>
+            </ul>
+        </li>
+    </ol>
+</div>
+<div id="newsarea">
+    <!-- dynamic content goes here-->
+</div>
+<div class="menu">
+    <div id="continue-container">
+        <p class="instructions" id="nextHint">You need to shift all sliders into a valid position before you can
+            continue.</p><br>
+        <p><input hidden="hidden" id="continue" type="checkbox">
+            <label for="continue" hidden="hidden" id="continueLabel">I would voluntarily like to continue assessing more
+                news items!</label></p>
+    </div>
+    <button disabled="disabled" id="nextButton">Next Page</button>
+</div>
+</body>
+</html>
